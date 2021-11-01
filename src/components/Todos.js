@@ -17,8 +17,8 @@ function Todos() {
           </h4>
           <div style={{ display: "flex" }}>
             <button onClick={() => dispatch(removeTodo(todo.id))}>x</button>
-            <button onClick={() => dispatch(markTodoAsComplete(todo.id))}>
-              completed
+            <button onClick={() => dispatch(markTodoAsComplete(todo.id))}>{todo.is_complete? "not complete": "complete"}
+ 
             </button>
           </div>
         </>
